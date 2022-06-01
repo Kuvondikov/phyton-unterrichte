@@ -49,7 +49,13 @@ Created on Tue May 31 16:05:53 2022
 #            print(f"Do'konimizda {mahsulot}Savatingiz bo'sh")            
 
 
+users = ['alisher1983','aziza','yasina' 'umar']
+login = input("Yangi login tanlang:" )
 
+if login in users:
+    print('Login band, yangi login tanalng!')
+else:
+    print("Xush kelibsiz!")
 
 
 mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz',
@@ -58,7 +64,7 @@ mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz',
 
 savat = []
 for n in range(5):
-    savat.append(input(f'Savatga {n+1}-mahsulotni qo\'shing: '))
+    savat.append(input(f"Savatga {n+1}-mahsulotni qo'shing: "))
 
 bor_mahsulotlar = []
 mavjud_emas = []
@@ -69,20 +75,15 @@ for mahsulot in savat:
         mavjud_emas.append(mahsulot)
 
 if mavjud_emas:
-  print("Do'konimizda quyidagi mahsulotlar yo'q:")
-for mahsulot in mavjud_emas:
-  print(mahsulot)
+  print(f"Do'konimizda quyidagi mahsulotlar yo'q:")
+  for mahsulot in mavjud_emas:
+    print(mahsulot)
 else:
   print("Siz so'ragan barcha mahsulotlar do'konimizda bor")
+    
 
 
-users = ['alisher1983','aziza','yasina' 'umar']
-login = input("Yangi login tanlang:" )
 
-if login in users:
-    print('Login band, yangi login tanalng!')
-else:
-    print("Xush kelibsiz!")
 
 
 
